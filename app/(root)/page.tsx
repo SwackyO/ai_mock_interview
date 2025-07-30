@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import InterviewCard from '@/components/InterviewCard'
-import {getCurrentUser, getInterviewByUserId} from "@/lib/actions/auth.action";
+import {getCurrentUser} from "@/lib/actions/auth.action";
+import {getInterviewByUserId} from "@/lib/actions/general.action";
 
 const page = async () => {
     const user = await getCurrentUser()
